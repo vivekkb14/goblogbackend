@@ -1,4 +1,4 @@
-module github.com/go-mysql-connect
+module github.com/vivekkb14/goblogbackend
 
 go 1.18
 

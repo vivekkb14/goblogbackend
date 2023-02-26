@@ -14,3 +14,8 @@ linux:
 windows:
 	go mod tidy
 	go build .
+
+dockerise:
+	go mod tidy
+	GOOS=linux CGO_ENABLED=0 go build -o gomysql main.go  
+	docker build -t goblog:latest .

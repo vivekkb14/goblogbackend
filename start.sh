@@ -11,6 +11,6 @@ mysql -u root -pyour_password -e "use new_db_kbv;"
 export DBUSER=root
 export DBPASS=your_password
 
-chmod +x gomysql
+# chmod +x gomysql
 
-./gomysql
+# ./gomysql

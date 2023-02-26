@@ -1,0 +1,10 @@
+version: "3"
+services:
+  go-blog-server:
+    image: vivekklp/goblog:latest
+    restart: always
+    container_name: go-blog-server
+    network_mode: "host"
+    environment:
+      - DBUSER=root
+      - DBPASS=your_password
