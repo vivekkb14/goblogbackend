@@ -78,7 +78,7 @@ func (database *DataBase) InserIntoTable(userInfo common.UserRequest) (int, erro
 		return 0, err
 	}
 	fmt.Printf("Rows affected when creating table: %d\n", rows)
-	id := database.ExecuteQuery("")
+	id := database.GetLastId("")
 	fmt.Println("Id is: ", id)
 	return id, nil
 }
@@ -134,7 +134,7 @@ func (database *DataBase) SelectAuthorInfo(id int) (common.Author, error) {
 	return author, nil
 }
 
-func (database *DataBase) ExecuteQuery(queryInfo string) int {
+func (database *DataBase) GetLastId(queryInfo string) int {
 	var id int
 	query := `SELECT Id FROM articles ORDER BY id DESC LIMIT 1;`
 	res, err := database.Db.Query(query)
