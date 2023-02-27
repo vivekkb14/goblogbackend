@@ -13,5 +13,5 @@ To start using docker , execute `start.sh` and run command `make dockerise` and
 
 ## Test cases for goblogbackend
 
-API integration test have been writtern using ginkgo (https://onsi.github.io/ginkgo/)
-install ginkgo and run `ginkgo command` in httpserver
+API integration test have been writtern using ginkgo (https://onsi.github.io/ginkgo/).
+Install ginkgo and run `ginkgo` command in httpserver
